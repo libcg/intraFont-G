@@ -1,6 +1,6 @@
 intraFont - A bitmap font library for PSP using the PSP's internal font (firmware pgf and bwfon files)
 
-intraFont Version 0.31 by BenHur - http://www.psp-programming.com/benhur
+intraFont Version 0.31 by BenHur - http://web.archive.org/web/20120112015626/http://www.psp-programming.com/benhur/
 
 intraFont uses parts of pgeFont by InsertWittyName - http://insomniac.0x89.org
 G-spec code by Geecko (2010)
@@ -47,13 +47,13 @@ Rule of thumb:
 
 The following table shows typical performance numbers:
 
-font:   ¦ INTRAFONT_CACHE_MED (def) ¦  INTRAFONT_CACHE_LARGE  ¦ INTRAFONT_CACHE_ASCII ¦  INTRAFONT_CACHE_ALL
+font:   Â¦ INTRAFONT_CACHE_MED (def) Â¦  INTRAFONT_CACHE_LARGE  Â¦ INTRAFONT_CACHE_ASCII Â¦  INTRAFONT_CACHE_ALL
 --------+---------------------------+-------------------------+-----------------------+--------------------------
-ltn0-7  ¦   52ms,  114kB, 2.5kCPS(*)¦   52ms,  210kB, 2.5kCPS ¦  83ms, 33kB, 100kCPS  ¦  191ms, 119kB, 100kCPS
-ltn8-15 ¦   36ms,   83kB, 4.1kCPS   ¦   36ms,  179kB, 4.1kCPS ¦  54ms, 20kB, 100kCPS  ¦   95ms,  64kB, 100kCPS
-jpn0    ¦ 1020ms, 1763kB, 0.5kCPS   ¦ 1020ms, 1859kB, 0.5kCPS ¦ 997ms, 33kB, 100kCPS  ¦   - too many glyphs -
-kr0     ¦  350ms,  625kB, 0.6kCPS   ¦  350ms,  721kB, 0.6kCPS ¦  - no ASCII glyphs -  ¦ 1936ms, 440kB, 67kCPS(**)
-arib    ¦  177ms,  266kB, 1.9kCPS   ¦  177ms,  362kB, 1.9kCPS ¦  - no ASCII glyphs -  ¦   - too many glyphs -
+ltn0-7  Â¦   52ms,  114kB, 2.5kCPS(*)Â¦   52ms,  210kB, 2.5kCPS Â¦  83ms, 33kB, 100kCPS  Â¦  191ms, 119kB, 100kCPS
+ltn8-15 Â¦   36ms,   83kB, 4.1kCPS   Â¦   36ms,  179kB, 4.1kCPS Â¦  54ms, 20kB, 100kCPS  Â¦   95ms,  64kB, 100kCPS
+jpn0    Â¦ 1020ms, 1763kB, 0.5kCPS   Â¦ 1020ms, 1859kB, 0.5kCPS Â¦ 997ms, 33kB, 100kCPS  Â¦   - too many glyphs -
+kr0     Â¦  350ms,  625kB, 0.6kCPS   Â¦  350ms,  721kB, 0.6kCPS Â¦  - no ASCII glyphs -  Â¦ 1936ms, 440kB, 67kCPS(**)
+arib    Â¦  177ms,  266kB, 1.9kCPS   Â¦  177ms,  362kB, 1.9kCPS Â¦  - no ASCII glyphs -  Â¦   - too many glyphs -
 --------+---------------------------+-------------------------+-----------------------+--------------------------
 
 (*)  Low speeds (<10kCPS) occur when characters are not cached. Printing the same characters a second time 
